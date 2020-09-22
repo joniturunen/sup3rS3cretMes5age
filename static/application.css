@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -6,10 +6,11 @@
   text-align: center;
 }
 
-html,body {
+html,
+body {
   min-width: 100vw;
   min-height: 100vh;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-image: linear-gradient(to bottom left, #3e366a, #09112f);
   -webkit-font-smoothing: antialiased;
   display: flex;
@@ -17,17 +18,18 @@ html,body {
   justify-content: center;
 }
 
-h1{
+h1 {
   font-weight: 400;
   margin-bottom: 4px;
 }
 
-textarea{
+textarea {
   border-radius: 6px;
   border: none;
   padding: 20px;
-  font-size: 20px;
-  min-height: 170px;
+  padding-top: 10px;
+  font-size: 16px;
+  min-height: 270px;
   transition: 200ms ease-in-out;
   width: 100%;
 }
@@ -37,7 +39,7 @@ button {
   margin-top: 32px;
   min-width: 210px;
   color: white;
-  box-shadow: 0 2px 6px 0 rgba(5,15,44,0.5);
+  box-shadow: 0 2px 6px 0 rgba(5, 15, 44, 0.5);
   padding: 0 20px;
   display: inline-block;
   border-radius: 50px;
@@ -53,16 +55,16 @@ button {
 
 .container {
   position: relative;
-  margin: 0 auto;
-  max-width: 500px;
-  width: 100vw;
+  margin: 30 auto;
+  min-width: 500px;
+  width: 90vw;
 }
 
-.encrypt{
+.encrypt {
   background-image: linear-gradient(80deg, #00aeff, #3369e7);
 }
 
-.clipboard{
+.clipboard {
   background-image: linear-gradient(284deg, #1cc7d0, #2dde98);
 }
 
@@ -77,11 +79,11 @@ button {
 .subtitle {
   margin-top: 4px;
   margin-bottom: 32px;
-  opacity: .9;
+  opacity: 0.9;
   font-weight: 400;
 }
 
 .send {
   text-align: center;
-  color: white; 
+  color: white;
 }
