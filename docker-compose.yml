@@ -1,10 +1,8 @@
-version: '3.2'
+version: "3.2"
 
 services:
-
   vault:
     image: vault:latest
-    container_name: vault
     environment:
       VAULT_DEV_ROOT_TOKEN_ID: supersecret
     cap_add:
@@ -15,7 +13,6 @@ services:
   supersecret:
     build: ./
     image: algolia/supersecretmessage:latest
-    container_name: supersecret
     environment:
       VAULT_ADDR: http://vault:8200
       VAULT_TOKEN: supersecret
@@ -25,4 +22,3 @@ services:
       - "443:443"
     depends_on:
       - vault
-
